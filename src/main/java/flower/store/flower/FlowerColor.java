@@ -12,7 +12,7 @@ public enum FlowerColor {
     }
 
     @Override
-    public String toString() {
+    public final String toString() {
         return stringRepresentation;
     }
 }
