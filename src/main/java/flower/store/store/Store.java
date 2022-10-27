@@ -1,6 +1,6 @@
 package flower.store.store;
 
-import flower.store.groups.instances_classes.FlowerBucket;
+import flower.store.groups.instancesClasses.FlowerBucket;
 import flower.store.groups.specs.FlowerBucketSpecs;
 
 import java.util.ArrayList;

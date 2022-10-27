@@ -1,4 +1,4 @@
-package flower.store.groups.instances_classes;
+package flower.store.groups.instancesClasses;
 
 import flower.store.groups.specs.FlowerBucketSpecs;
 import java.util.ArrayList;

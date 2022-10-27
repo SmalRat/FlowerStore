@@ -1,4 +1,4 @@
-package flower.store.groups.instances_classes;
+package flower.store.groups.instancesClasses;
 
 import flower.store.flower.Flower;
 import lombok.Getter;
@@ -11,7 +11,7 @@ public class FlowerPack {
         this.amount = amount;
     }
 
-    public double getPrice(){
+    public double getPrice() {
         return amount * flower.getPrice();
     }
 }

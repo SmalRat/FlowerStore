@@ -6,4 +6,4 @@
  * @author
  * @version 1.0
  */
-package flower.store.groups.instances_classes;
+package flower.store.groups.instancesClasses;
