@@ -18,8 +18,8 @@ public final class FlowerBucket {
         return new ArrayList<FlowerPack>(flowerPacks);
     }
 
-    public boolean matches(final FlowerBucketSpecs specs) {
-        return (this.specs.equal(specs));
+    public boolean matches(final FlowerBucketSpecs otherSpecs) {
+        return (this.specs.equal(otherSpecs));
     }
 
     public double getPrice() {
