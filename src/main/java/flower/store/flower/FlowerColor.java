@@ -1,4 +1,4 @@
-package flower.store;
+package flower.store.flower;
 
 public enum FlowerColor {
     /**
@@ -7,12 +7,12 @@ public enum FlowerColor {
     RED("#FF0000"), BLUE("#0000FF");
     private final String stringRepresentation;
 
-    FlowerColor(String stringRepresentation) {
-        this.stringRepresentation = stringRepresentation;
+    FlowerColor(final String stringRepr) {
+        this.stringRepresentation = stringRepr;
     }
 
     @Override
-    public String toString() {
+    public final String toString() {
         return stringRepresentation;
     }
 }

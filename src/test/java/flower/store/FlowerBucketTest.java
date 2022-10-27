@@ -1,5 +1,9 @@
 package flower.store;
 
+import flower.store.flower.Flower;
+import flower.store.flowers.Rose;
+import flower.store.groups.instances_classes.FlowerBucket;
+import flower.store.groups.instances_classes.FlowerPack;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
@@ -23,7 +27,7 @@ public class FlowerBucketTest {
         int price = RANDOM_GENERATOR.nextInt(MAX_PRICE);
         int quantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
         Flower flower = new Rose();
-        flower.setPrice(10);
+        flower.setPrice(price);
         FlowerPack flowerPack = new FlowerPack(flower, quantity);
         flowerBucket.add(flowerPack);
         Assertions.assertEquals(price * quantity, flowerBucket.getPrice());
