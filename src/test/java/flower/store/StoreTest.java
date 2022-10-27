@@ -18,7 +18,7 @@ public class StoreTest {
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_PRICE = 100;
     private Store store = new Store();
-    private Rose rose_one;
+    private Rose roseOne;
     private Tulip tulip_one;
     private Chamomile chamomile_one;
     private FlowerPack flowerPack_one;
@@ -41,19 +41,19 @@ public class StoreTest {
     @BeforeEach
     public void init() {
 
-        rose_one = new Rose();
-        rose_one.setPrice(8);
+        roseOne = new Rose();
+        roseOne.setPrice(8);
 
         tulip_one = new Tulip();
         tulip_one.setPrice(12);
 
         chamomile_one = new Chamomile();
-        rose_one.setPrice(17);
+        roseOne.setPrice(17);
 
-        flowerPack_one = new FlowerPack(rose_one, 10);
+        flowerPack_one = new FlowerPack(roseOne, 10);
         flowerPack_two = new FlowerPack(tulip_one, 5);
         flowerPack_three = new FlowerPack(chamomile_one, 15);
-        flowerPack_four = new FlowerPack(rose_one, 13);
+        flowerPack_four = new FlowerPack(roseOne, 13);
         flowerPack_five = new FlowerPack(tulip_one, 8);
         flowerPack_six = new FlowerPack(chamomile_one, 11);
 
