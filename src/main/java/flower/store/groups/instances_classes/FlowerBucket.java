@@ -6,20 +6,21 @@ import java.util.List;
 
 public final class FlowerBucket {
     /**
-     * Specifications of this bucket
+     * Specifications of this bucket.
      * Linter... just be quiet..
      *
      */
     private final FlowerBucketSpecs specs = new FlowerBucketSpecs();
 
     /**
-     * List of the packs inside bucket
+     * List of the packs inside bucket.
      */
     private final List<FlowerPack> flowerPacks = new ArrayList<>();
 
 
     /**
-     * Adds a pack of flowers to this bucket
+     * Adds a pack of flowers to this bucket.
+     * @param flowerPack flowerPacks to add.
      */
     public void add(final FlowerPack flowerPack) {
         flowerPacks.add(flowerPack);
@@ -28,7 +29,8 @@ public final class FlowerBucket {
 
 
     /**
-     * Returns the copy of flower packs inside this bucket
+     * Returns the copy of flower packs inside this bucket.
+     * @return returns an array
      */
     public ArrayList<FlowerPack> getFlowerPacks() {
         return new ArrayList<FlowerPack>(flowerPacks);
@@ -36,7 +38,9 @@ public final class FlowerBucket {
 
 
     /**
-     * Returns true/false - whether this bucket matches pattern
+     * Returns true/false - whether this bucket matches pattern.
+     * @param otherSpecs other specification.
+     * @return returns boolean.
      */
     public boolean matches(final FlowerBucketSpecs otherSpecs) {
         return (this.specs.equal(otherSpecs));
@@ -44,7 +48,8 @@ public final class FlowerBucket {
 
 
     /**
-     * Returns the price of the bucket
+     * Returns the price of the bucket.
+     * @return just something.
      */
     public double getPrice() {
         return specs.getPrice();
