@@ -1,7 +1,7 @@
 package flower.store.groups.specs;
 
 import flower.store.flower.Flower;
-import flower.store.groups.instancesClasses.FlowerPack;
+import flower.store.groups.instancesclasses.FlowerPack;
 import java.util.HashMap;
 
 public class FlowerBucketSpecs {

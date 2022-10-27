@@ -2,8 +2,8 @@ package flower.store;
 
 import flower.store.flower.Flower;
 import flower.store.flowers.Rose;
-import flower.store.groups.instancesClasses.FlowerBucket;
-import flower.store.groups.instancesClasses.FlowerPack;
+import flower.store.groups.instancesclasses.FlowerBucket;
+import flower.store.groups.instancesclasses.FlowerPack;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;

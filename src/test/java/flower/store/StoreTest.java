@@ -3,8 +3,8 @@ package flower.store;
 import flower.store.flowers.Chamomile;
 import flower.store.flowers.Rose;
 import flower.store.flowers.Tulip;
-import flower.store.groups.instancesClasses.FlowerBucket;
-import flower.store.groups.instancesClasses.FlowerPack;
+import flower.store.groups.instancesclasses.FlowerBucket;
+import flower.store.groups.instancesclasses.FlowerPack;
 import flower.store.groups.specs.FlowerBucketSpecs;
 import flower.store.store.Store;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,90 +18,91 @@ public class StoreTest {
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_PRICE = 100;
     private Store store = new Store();
-    private Rose rose1;
-    private Tulip tulip1;
-    private Chamomile chamomile1;
-    private FlowerPack flowerPack1;
-    private FlowerPack flowerPack2;
-    private FlowerPack flowerPack3;
-    private FlowerPack flowerPack4;
-    private FlowerPack flowerPack5;
-    private FlowerPack flowerPack6;
-    private FlowerBucket bucket1;
-    private FlowerBucket bucket2;
-    private FlowerBucket bucket3;
-    private FlowerBucketSpecs specs1;
-    private FlowerBucketSpecs specs2;
-    private FlowerBucketSpecs specs3;
+    private Rose rose_one;
+    private Tulip tulip_one;
+    private Chamomile chamomile_one;
+    private FlowerPack flowerPack_one;
+    private FlowerPack flowerPack_two;
+    private FlowerPack flowerPack_three;
+    private FlowerPack flowerPack_four;
+    private FlowerPack flowerPack_five;
+    private FlowerPack flowerPack_six;
+    private FlowerBucket bucket_one;
+    private FlowerBucket bucket_two;
+    private FlowerBucket bucket_three;
+    private FlowerBucketSpecs specs_one;
+    private FlowerBucketSpecs specs_two;
+    private FlowerBucketSpecs specs_three;
 
-    private List<FlowerBucket> correct_answer1;
-    private List<FlowerBucket> correct_answer2;
-    private List<FlowerBucket> correct_answer3;
+    private List<FlowerBucket> correct_answer_one;
+    private List<FlowerBucket> correct_answer_two;
+    private List<FlowerBucket> correct_answer_three;
 
     @BeforeEach
-    public void init(){
+    public void init() {
 
-        rose1 = new Rose();
-        rose1.setPrice(8);
+        rose_one = new Rose();
+        rose_one.setPrice(8);
 
-        tulip1 = new Tulip();
-        tulip1.setPrice(12);
+        tulip_one = new Tulip();
+        tulip_one.setPrice(12);
 
-        chamomile1 = new Chamomile();
-        rose1.setPrice(17);
+        chamomile_one = new Chamomile();
+        rose_one.setPrice(17);
 
-        flowerPack1 = new FlowerPack(rose1, 10);
-        flowerPack2 = new FlowerPack(tulip1, 5);
-        flowerPack3 = new FlowerPack(chamomile1, 15);
-        flowerPack4 = new FlowerPack(rose1, 13);
-        flowerPack5 = new FlowerPack(tulip1, 8);
-        flowerPack6 = new FlowerPack(chamomile1, 11);
+        flowerPack_one = new FlowerPack(rose_one, 10);
+        flowerPack_two = new FlowerPack(tulip_one, 5);
+        flowerPack_three = new FlowerPack(chamomile_one, 15);
+        flowerPack_four = new FlowerPack(rose_one, 13);
+        flowerPack_five = new FlowerPack(tulip_one, 8);
+        flowerPack_six = new FlowerPack(chamomile_one, 11);
 
-        bucket1 = new FlowerBucket();
-        bucket1.add(flowerPack1);
-        bucket1.add(flowerPack3);
+        bucket_one = new FlowerBucket();
+        bucket_one.add(flowerPack_one);
+        bucket_one.add(flowerPack_three);
 
 
-        bucket2 = new FlowerBucket();
-        bucket2.add(flowerPack2);
-        bucket2.add(flowerPack5);
+        bucket_two = new FlowerBucket();
+        bucket_two.add(flowerPack_two);
+        bucket_two.add(flowerPack_five);
 
-        bucket3 = new FlowerBucket();
-        bucket3.add(flowerPack4);
-        bucket3.add(flowerPack6);
+        bucket_three = new FlowerBucket();
+        bucket_three.add(flowerPack_four);
+        bucket_three.add(flowerPack_six);
 
-        store.addBucket(bucket1);
-        store.addBucket(bucket2);
-        store.addBucket(bucket3);
+        store.addBucket(bucket_one);
+        store.addBucket(bucket_two);
+        store.addBucket(bucket_three);
 
-        specs1 = new FlowerBucketSpecs();
-        specs1.add(flowerPack1);
-        specs1.add(flowerPack3);
+        specs_one = new FlowerBucketSpecs();
+        specs_one.add(flowerPack_one);
+        specs_one.add(flowerPack_three);
 
-        specs2 = new FlowerBucketSpecs();
-        specs2.add(flowerPack2);
-        specs2.add(flowerPack5);
+        specs_two = new FlowerBucketSpecs();
+        specs_two.add(flowerPack_two);
+        specs_two.add(flowerPack_five);
 
-        specs3 = new FlowerBucketSpecs();
-        specs3.add(flowerPack4);
-        specs3.add(flowerPack6);
+        specs_three = new FlowerBucketSpecs();
+        specs_three.add(flowerPack_four);
+        specs_three.add(flowerPack_six);
 
-        correct_answer1 = new ArrayList<>();
-        correct_answer1.add(bucket1);
+        correct_answer_one = new ArrayList<>();
+        correct_answer_one.add(bucket_one);
 
-        correct_answer2 = new ArrayList<>();
-        correct_answer2.add(bucket2);
+        correct_answer_two = new ArrayList<>();
+        correct_answer_two.add(bucket_two);
 
-        correct_answer3 = new ArrayList<>();
-        correct_answer3.add(bucket3);
+        correct_answer_three = new ArrayList<>();
+        correct_answer_three.add(bucket_three);
     }
 
     @Test
-    public void test1(){}
+    public void test_one() { }
 
     @Test
-    public void test2(){}
+    public void test_two() { }
 
     @Test
-    public void test3(){}
+    public void test_three() { }
+
 }

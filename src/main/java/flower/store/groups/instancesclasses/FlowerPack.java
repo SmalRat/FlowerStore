@@ -1,4 +1,4 @@
-package flower.store.groups.instancesClasses;
+package flower.store.groups.instancesclasses;
 
 import flower.store.flower.Flower;
 import lombok.Getter;
