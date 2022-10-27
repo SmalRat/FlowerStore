@@ -9,7 +9,7 @@ public final class FlowerBucket {
 
     private List<FlowerPack> flowerPacks = new ArrayList<>();
 
-    public void add(FlowerPack flowerPack) {
+    public void add(final FlowerPack flowerPack) {
         flowerPacks.add(flowerPack);
         specs.add(flowerPack);
     }
@@ -18,7 +18,7 @@ public final class FlowerBucket {
         return new ArrayList<FlowerPack>(flowerPacks);
     }
 
-    public boolean matches(FlowerBucketSpecs specs) {
+    public boolean matches(final FlowerBucketSpecs specs) {
         return (this.specs.equal(specs));
     }
 

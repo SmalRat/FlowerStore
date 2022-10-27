@@ -7,7 +7,7 @@ public enum FlowerColor {
     RED("#FF0000"), BLUE("#0000FF");
     private final String stringRepresentation;
 
-    FlowerColor(String stringRepresentation) {
+    FlowerColor(final String stringRepresentation) {
         this.stringRepresentation = stringRepresentation;
     }
 
