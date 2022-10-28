@@ -17,7 +17,11 @@ import java.util.Random;
 
 public class StoreTest {
     private static final Random RANDOM_GENERATOR = new Random();
-    private static final int MAX_PRICE = 100;
+    private static final int MAX_AMOUNT = 100;
+
+    private int AM_FIRST = RANDOM_GENERATOR.nextInt(MAX_AMOUNT), AM_SECOND = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
+            AM_THIRD = RANDOM_GENERATOR.nextInt(MAX_AMOUNT), AM_FOURTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
+            AM_FIFTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT), AM_SIXTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT);
     private Store store = new Store();
     private Rose roseOne;
     private Tulip tulipOne;
@@ -51,12 +55,12 @@ public class StoreTest {
         chamomileOne = new Chamomile();
         roseOne.setPrice(17);
 
-        flowerPackOne = new FlowerPack(roseOne, 10);
-        flowerPackTwo = new FlowerPack(tulipOne, 5);
-        flowerPackThree = new FlowerPack(chamomileOne, 15);
-        flowerPackFour = new FlowerPack(roseOne, 13);
-        flowerPackFive = new FlowerPack(tulipOne, 8);
-        flowerPackSix = new FlowerPack(chamomileOne, 11);
+        flowerPackOne = new FlowerPack(roseOne, AM_FIRST);
+        flowerPackTwo = new FlowerPack(tulipOne, AM_SECOND);
+        flowerPackThree = new FlowerPack(chamomileOne, AM_THIRD);
+        flowerPackFour = new FlowerPack(roseOne, AM_FOURTH);
+        flowerPackFive = new FlowerPack(tulipOne, AM_FIFTH);
+        flowerPackSix = new FlowerPack(chamomileOne, AM_SIXTH);
 
         bucketOne = new FlowerBucket();
         bucketOne.add(flowerPackOne);
