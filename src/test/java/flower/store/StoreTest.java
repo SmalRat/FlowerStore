@@ -20,15 +20,15 @@ public class StoreTest {
     private static final int MAX_AMOUNT = 100;
     private static final int MAX_PRICE = 100;
 
-    private int AMFIRST = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
-            AMSECOND = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
-            AMTHIRD = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
-            AMFOURTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
-            AMFIFTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
-            AMSIXTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
-            PRICEFIRST = RANDOM_GENERATOR.nextInt(MAX_PRICE),
-            PRICESECOND = RANDOM_GENERATOR.nextInt(MAX_PRICE),
-            PRICETHIRD = RANDOM_GENERATOR.nextInt(MAX_PRICE);
+    private int amFIRST = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
+            amSECOND = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
+            amTHIRD = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
+            amFOURTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
+            amFIFTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
+            amSIXTH = RANDOM_GENERATOR.nextInt(MAX_AMOUNT),
+            priceFIRST = RANDOM_GENERATOR.nextInt(MAX_PRICE),
+            priceSECOND = RANDOM_GENERATOR.nextInt(MAX_PRICE),
+            priceTHIRD = RANDOM_GENERATOR.nextInt(MAX_PRICE);
     private Store store = new Store();
     private Rose roseOne;
     private Tulip tulipOne;
@@ -54,20 +54,20 @@ public class StoreTest {
     public void init() {
 
         roseOne = new Rose();
-        roseOne.setPrice(PRICEFIRST);
+        roseOne.setPrice(priceFIRST);
 
         tulipOne = new Tulip();
-        tulipOne.setPrice(PRICESECOND);
+        tulipOne.setPrice(priceSECOND);
 
         chamomileOne = new Chamomile();
-        roseOne.setPrice(PRICETHIRD);
+        roseOne.setPrice(priceTHIRD);
 
-        flowerPackOne = new FlowerPack(roseOne, AMFIRST);
-        flowerPackTwo = new FlowerPack(tulipOne, AMSECOND);
-        flowerPackThree = new FlowerPack(chamomileOne, AMTHIRD);
-        flowerPackFour = new FlowerPack(roseOne, AMFOURTH);
-        flowerPackFive = new FlowerPack(tulipOne, AMFIFTH);
-        flowerPackSix = new FlowerPack(chamomileOne, AMSIXTH);
+        flowerPackOne = new FlowerPack(roseOne, amFIRST);
+        flowerPackTwo = new FlowerPack(tulipOne, amSECOND);
+        flowerPackThree = new FlowerPack(chamomileOne, amTHIRD);
+        flowerPackFour = new FlowerPack(roseOne, amFOURTH);
+        flowerPackFive = new FlowerPack(tulipOne, amFIFTH);
+        flowerPackSix = new FlowerPack(chamomileOne, amSIXTH);
 
         bucketOne = new FlowerBucket();
         bucketOne.add(flowerPackOne);
